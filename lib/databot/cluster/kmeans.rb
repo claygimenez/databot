@@ -18,7 +18,7 @@ module Databot
       # 2. assign elements to buckets
       buckets = assign_elements_to_buckets(input_array, buckets)
 
-      (i-1).times do
+      (i - 1).times do
         # 3. recalculate bucket centroids
         buckets = recalculate_bucket_centroids(buckets)
 
@@ -26,7 +26,6 @@ module Databot
         buckets = assign_elements_to_buckets(input_array, buckets)
       end
 
-      puts "!!!!!! #{buckets} !!!!!"
       input_array
     end
 
@@ -39,25 +38,18 @@ module Databot
         closest_bucket = nil
         closest_distance = Float::INFINITY
 
-        # puts "BUCKETS: #{buckets.keys}"
         buckets.each do |seed, bucket|
           current_distance = calculate_sq_euclidean_distance(elem, seed)
-          puts "ELEM: #{elem}, SEED: #{seed}, DIST: #{current_distance}"
 
           if current_distance < closest_distance
             # update best fit variables
             closest_bucket = buckets[seed]
             closest_distance = current_distance
-            # puts "BUCKETS: #{buckets}"
-            # puts "updating distance--#{elem} is closest to #{seed}"
-          else
-            # puts "NOT UPDATING DISTANCE--current: #{current_distance} and closest: #{closest_distance}"
           end
         end
 
         # assign the element to the closest bucket
         closest_bucket.push(elem)
-        # puts "closest bucket for #{elem} is #{closest_bucket}"
       end
 
       buckets
