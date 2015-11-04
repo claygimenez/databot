@@ -108,9 +108,9 @@ a {
  * Blockquotes
  */
 blockquote {
-    color: $grey-color;
-    border-left: 4px solid $grey-color-light;
-    padding-left: $spacing-unit / 2;
+    color: $text-color;
+    border-left: 4px solid $brand-color;
+    padding-left: $spacing-unit;
     font-size: 18px;
     letter-spacing: -1px;
     font-style: italic;
@@ -128,9 +128,9 @@ blockquote {
 pre,
 code {
     font-size: 15px;
-    border: 1px solid $grey-color-light;
-    border-radius: 3px;
-    background-color: #eef;
+    border: 1px solid $accent-color-dark;
+    border-radius: $border-radius;
+    background-color: $accent-color;
 }
 
 code {
@@ -138,7 +138,7 @@ code {
 }
 
 pre {
-    padding: 8px 12px;
+    padding: $spacing-unit;
     overflow-x: scroll;
 
     > code {
