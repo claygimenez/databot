@@ -111,8 +111,8 @@ pre {
  * Wrapper
  */
 .wrapper {
-  max-width: -webkit-calc(800px - (20px * 2));
-  max-width: calc(800px - (20px * 2));
+  max-width: -webkit-calc(1024px - (20px * 2));
+  max-width: calc(1024px - (20px * 2));
   margin-right: auto;
   margin-left: auto;
   padding-right: 20px;
@@ -141,7 +141,32 @@ pre {
   height: 16px;
   vertical-align: middle; }
   .icon > svg path {
-    fill: #828282; }
+    fill: #F8774D; }
+
+/**
+ * Button styles
+ */
+.button {
+  background-color: #7DF089;
+  border-radius: 3px;
+  border: 1px solid #1ADE2E;
+  color: #221E1A;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  height: 60px;
+  letter-spacing: 0.02em;
+  line-height: 60px;
+  margin: 0 auto;
+  text-align: center;
+  width: 300px; }
+
+/**
+ * Home styles
+ */
+.home img {
+  margin: 0 auto calc(20px * 2) auto;
+  display: block; }
 
 /**
  * Site header
@@ -214,8 +239,15 @@ pre {
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid #e8e8e8;
-  padding: 20px 0; }
+  border-top: 1px solid #FEE6DF;
+  padding: calc(20px * 2) 0; }
+  .site-footer p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2em;
+    text-align: center; }
+    .site-footer p:last-child {
+      margin-bottom: 0; }
 
 .footer-heading {
   font-size: 18px;
@@ -266,10 +298,17 @@ pre {
  * Page content
  */
 .page-content {
-  padding: 20px 0; }
+  padding: 20px 0 84px 0; }
 
 .page-heading {
   font-size: 20px; }
+  .page-heading#landing {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 54px;
+    margin: 84px auto 36px auto;
+    max-width: 480px;
+    text-align: center; }
 
 .post-list {
   margin-left: 0;

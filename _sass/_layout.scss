@@ -1,4 +1,37 @@
 /**
+ * Button styles
+ */
+.button {
+    background-color: $accent-color;
+    border-radius: $border-radius;
+    border: 1px solid $accent-color-dark;
+    color: $text-color;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+    height: 60px;
+    letter-spacing: 0.02em;
+    line-height: 60px;
+    margin: 0 auto;
+    text-align: center;
+    width: 300px;
+}
+
+
+
+/**
+ * Home styles
+ */
+.home {
+    img {
+        margin: 0 auto calc(#{$spacing-unit} * 2) auto;
+        display: block;
+    }
+}
+
+
+
+/**
  * Site header
  */
 .site-header {
@@ -103,8 +136,19 @@
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
-    padding: $spacing-unit 0;
+    border-top: 1px solid $border-color;
+    padding: calc(#{$spacing-unit} * 2) 0;
+
+    p {
+        font-size: $small-font-size;
+        font-weight: 400;
+        line-height: 1.2em;
+        text-align: center;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
 }
 
 .footer-heading {
@@ -173,12 +217,22 @@
  * Page content
  */
 .page-content {
-    padding: $spacing-unit 0;
+    padding: $spacing-unit 0 84px 0;
 }
 
 .page-heading {
     font-size: 20px;
+
+    &#landing {
+        font-size: 36px;
+        font-weight: 300;
+        line-height: 54px;
+        margin: 84px auto 36px auto;
+        max-width: 480px;
+        text-align: center;
+    }
 }
+
 
 .post-list {
     margin-left: 0;
