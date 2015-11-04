@@ -127,10 +127,11 @@ blockquote {
  */
 pre,
 code {
-    font-size: 15px;
+    background-color: $accent-color;
     border: 1px solid $accent-color-dark;
     border-radius: $border-radius;
-    background-color: $accent-color;
+    font-family: $accent-font-family;
+    font-size: 15px;
 }
 
 code {

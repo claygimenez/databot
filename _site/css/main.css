@@ -11,7 +11,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 300;
@@ -90,10 +90,11 @@ blockquote {
  */
 pre,
 code {
-  font-size: 15px;
+  background-color: #7DF089;
   border: 1px solid #1ADE2E;
   border-radius: 3px;
-  background-color: #7DF089; }
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 15px; }
 
 code {
   padding: 1px 5px; }
@@ -151,10 +152,12 @@ pre {
 
 .site-title {
   color: #F8774D;
+  float: left;
+  font-family: "Roboto Slab", sans-serif;
   font-size: 36px;
+  font-weight: 300;
   line-height: 74px;
-  margin: 0 auto;
-  float: left; }
+  margin: 0 auto; }
   .site-title:hover {
     text-decoration: none; }
   .site-title, .site-title:visited {
@@ -162,21 +165,26 @@ pre {
 
 .site-nav {
   float: right;
-  line-height: 56px; }
+  line-height: 74px; }
   .site-nav .menu-icon {
     display: none; }
   .site-nav .page-link {
     color: #221E1A;
-    line-height: 1.5; }
+    font-weight: 400;
+    line-height: 20px; }
+    .site-nav .page-link:hover {
+      color: #F8774D;
+      text-decoration: none;
+      transition: color 0.1s linear; }
     .site-nav .page-link:not(:first-child) {
       margin-left: 20px; }
   @media screen and (max-width: 600px) {
     .site-nav {
       position: absolute;
-      top: 9px;
-      right: 30px;
+      top: 18px;
+      right: 10px;
       background-color: #FEF4E8;
-      border: 1px solid #e8e8e8;
+      border: 1px solid #FEE6DF;
       border-radius: 5px;
       text-align: right; }
       .site-nav .menu-icon {
@@ -191,7 +199,7 @@ pre {
           width: 18px;
           height: 15px; }
           .site-nav .menu-icon > svg path {
-            fill: #424242; }
+            fill: #F8774D; }
       .site-nav .trigger {
         clear: both;
         display: none; }
@@ -271,7 +279,7 @@ pre {
 
 .post-meta {
   font-size: 14px;
-  color: #828282; }
+  color: #F8774D; }
 
 .post-link {
   display: block;
