@@ -101,7 +101,11 @@ code {
 
 pre {
   padding: 20px;
-  overflow-x: scroll; }
+  overflow-x: scroll;
+  width: calc(100% - (20px * 2)); }
+  @media screen and (max-width: 800px) {
+    pre {
+      width: calc(100% - 20px); } }
   pre > code {
     border: 0;
     padding-right: 0;
@@ -142,6 +146,52 @@ pre {
   vertical-align: middle; }
   .icon > svg path {
     fill: #F8774D; }
+
+/**
+ * Docs styles
+ */
+.docs-container {
+  border: 1px solid #FEE6DF;
+  border-radius: 3px;
+  padding: 20px; }
+  .docs-container .categories {
+    display: inline-block;
+    width: 220px; }
+    @media screen and (max-width: 800px) {
+      .docs-container .categories {
+        display: none; } }
+    .docs-container .categories ul {
+      list-style: none;
+      margin: 0; }
+      .docs-container .categories ul li {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 38px; }
+        .docs-container .categories ul li a {
+          color: #221E1A; }
+          .docs-container .categories ul li a:hover {
+            text-decoration: none; }
+  .docs-container .doc-page-content {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+    width: calc(100% - 226px); }
+    @media screen and (max-width: 800px) {
+      .docs-container .doc-page-content {
+        width: calc(100% - (20px * 1)); } }
+    .docs-container .doc-page-content h1 {
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 32px;
+      margin-bottom: 24px; }
+      .docs-container .doc-page-content h1:hover:before {
+        content: '#';
+        color: #7DF089;
+        margin-right: 6px; }
+    .docs-container .doc-page-content p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 1em; }
 
 /**
  * Button styles

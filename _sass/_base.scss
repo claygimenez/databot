@@ -141,6 +141,11 @@ code {
 pre {
     padding: $spacing-unit;
     overflow-x: scroll;
+    width: calc(100% - (#{$spacing-unit} * 2));
+
+    @include media-query($on-laptop) {
+      width: calc(100% - #{$spacing-unit});
+    }
 
     > code {
         border: 0;
