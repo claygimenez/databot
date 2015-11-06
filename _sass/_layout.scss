@@ -170,7 +170,19 @@ hr {
     width: 240px;
 
     &:hover {
-      background-color: lighten($accent-color, 12);
+        background-color: lighten($accent-color, 12);
+    }
+
+    a {
+        color: $text-color;
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+
+        &:hover {
+            color: $text-color;
+            text-decoration: none;
+        }
     }
 }
 

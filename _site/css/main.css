@@ -271,6 +271,14 @@ hr {
   width: 240px; }
   .button:hover {
     background-color: #b4f6bb; }
+  .button a {
+    color: #221E1A;
+    display: inline-block;
+    height: 100%;
+    width: 100%; }
+    .button a:hover {
+      color: #221E1A;
+      text-decoration: none; }
 
 /**
  * Home styles
