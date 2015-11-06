@@ -127,7 +127,7 @@ blockquote {
  */
 pre,
 code {
-    background-color: $accent-color;
+    background-color: lighten($accent-color, 15);
     border: 1px solid $accent-color-dark;
     border-radius: $border-radius;
     font-family: $accent-font-family;
@@ -139,9 +139,9 @@ code {
 }
 
 pre {
-    padding: $spacing-unit;
+    padding: 12px 24px;
     overflow-x: scroll;
-    width: calc(100% - (#{$spacing-unit} * 2));
+    width: calc(100% - (24px * 2));
 
     @include media-query($on-laptop) {
       width: calc(100% - #{$spacing-unit});

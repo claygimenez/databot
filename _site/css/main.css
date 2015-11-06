@@ -90,7 +90,7 @@ blockquote {
  */
 pre,
 code {
-  background-color: #7DF089;
+  background-color: #c2f8c7;
   border: 1px solid #1ADE2E;
   border-radius: 3px;
   font-family: "Roboto Slab", sans-serif;
@@ -100,9 +100,9 @@ code {
   padding: 1px 5px; }
 
 pre {
-  padding: 20px;
+  padding: 12px 24px;
   overflow-x: scroll;
-  width: calc(100% - (20px * 2)); }
+  width: calc(100% - (24px * 2)); }
   @media screen and (max-width: 800px) {
     pre {
       width: calc(100% - 20px); } }
@@ -255,19 +255,22 @@ hr {
  * Button styles
  */
 .button {
-  background-color: #7DF089;
+  background-color: #c2f8c7;
   border-radius: 3px;
   border: 1px solid #1ADE2E;
   color: #221E1A;
   cursor: pointer;
   font-size: 18px;
-  font-weight: 400;
-  height: 60px;
+  font-weight: 300;
+  height: 50px;
   letter-spacing: 0.02em;
-  line-height: 60px;
+  line-height: 50px;
   margin: 0 auto;
   text-align: center;
-  width: 300px; }
+  transition: color 0.1s linear;
+  width: 240px; }
+  .button:hover {
+    background-color: #b4f6bb; }
 
 /**
  * Home styles

@@ -7,4 +7,4 @@ title: Getting Started
 
 To start using databot, install the gem
 
-    gem install databot
+    $ gem install databot
