@@ -154,7 +154,7 @@ hr {
  * Button styles
  */
 .button {
-    background-color: lighten($accent-color, 15);
+    background-color: lighten($accent-color, 12);
     border-radius: $border-radius;
     border: 1px solid $accent-color-dark;
     color: $text-color;
@@ -170,7 +170,7 @@ hr {
     width: 240px;
 
     &:hover {
-        background-color: lighten($accent-color, 12);
+        background-color: lighten($accent-color, 15);
     }
 
     a {

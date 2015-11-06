@@ -255,7 +255,7 @@ hr {
  * Button styles
  */
 .button {
-  background-color: #c2f8c7;
+  background-color: #b4f6bb;
   border-radius: 3px;
   border: 1px solid #1ADE2E;
   color: #221E1A;
@@ -270,7 +270,7 @@ hr {
   transition: color 0.1s linear;
   width: 240px; }
   .button:hover {
-    background-color: #b4f6bb; }
+    background-color: #c2f8c7; }
   .button a {
     color: #221E1A;
     display: inline-block;
