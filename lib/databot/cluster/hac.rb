@@ -1,7 +1,10 @@
 module Databot
   module Cluster
-    def self.hac
 
+    extend self
+
+    def hac
+      'hi'
     end
   end
 end

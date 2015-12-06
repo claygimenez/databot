@@ -39,7 +39,7 @@ module Databot
         closest_distance = Float::INFINITY
 
         buckets.each do |seed, bucket|
-          current_distance = calculate_sq_euclidean_distance(elem, seed)
+          current_distance = Databot::DistanceMetrics.calculate_sq_euclidean_distance(elem, seed)
 
           if current_distance < closest_distance
             # update best fit variables
@@ -79,15 +79,5 @@ module Databot
       buckets
     end
 
-    def calculate_sq_euclidean_distance(vect1, vect2)
-      size = vect1.length
-      sum = 0.0
-      i = 0
-      while i < size
-        sum += (vect2[i] - vect1[i])**2
-        i += 1
-      end
-      sum
-    end
   end
 end
