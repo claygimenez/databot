@@ -1,8 +1,8 @@
 # Site settings
 title: databot
 email: your-email@domain.com
-baseurl: "/databot" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://databotrb.com" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
